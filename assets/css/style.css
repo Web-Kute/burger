@@ -61,7 +61,34 @@ table {
 }
 
 h1 {
-  color: #994a68;
-  font-size: 4em;
+  color: #d21033;
+  font-family: 'Playfair regular';
+  font-size: 3em;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  margin: 0 auto;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  max-width: 960px;
+  grid-gap: 1px;
+}
+
+.grid .item {
+  font-size: 2em;
+  height: 5em;
+  min-width: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #171717;
 }
 /*# sourceMappingURL=style.css.map */
